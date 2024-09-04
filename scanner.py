@@ -1,4 +1,5 @@
-
+#DEVELOPED BY <PRIYANSHUL SHARMA>
+#WEBPAGE PRIYANSHUL.is-a.dev
 
 
 from pyfingerprint.pyfingerprint import PyFingerprint
