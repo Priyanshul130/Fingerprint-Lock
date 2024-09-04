@@ -3,7 +3,7 @@ import pyfingerprint
 import json
 import os
 
-# Initialize the fingerprint reader
+
 try:
     f = PyFingerprint('/dev/ttyUSB0', 57600, 0xFFFFFFFF, 0x00000000)
 
@@ -33,7 +33,7 @@ def register_fingerprint():
         characteristics = f.downloadCharacteristics(0x05)
         characteristics_str = ''.join(map(str, characteristics))
 
-        # Save the fingerprint data to a JSON file
+    
         data = {
             'name': name,
             'fingerprint': characteristics_str
