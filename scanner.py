@@ -13,6 +13,8 @@ try:
         raise ValueError('The given fingerprint sensor password is wrong!')
 
 except Exception as e:
+
+    
     print('The fingerprint sensor could not be initialized!')
     print('Exception message: ' + str(e))
     exit(1)
